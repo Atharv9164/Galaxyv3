@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.3.1,sdl2,sdl2_ttf,sdl2_image,sdl2_mixer
+requirements = python3,kivy==2.3.0,sdl2,sdl2_ttf,sdl2_image,sdl2_mixer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -106,7 +106,7 @@ fullscreen = 0
 android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 20
+android.sdk = 24
 
 # (str) Android NDK version to use
 android.ndk = 25b
