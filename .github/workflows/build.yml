@@ -47,7 +47,10 @@ jobs:
 
       - name: Build APK with Buildozer
         run: |
-          yes | buildozer -v android debug
+          yes | buildozer -v android debug 2>&1
+        env:
+          ANDROIDSDK: /home/runner/.buildozer/android/platform/android-sdk
+          ANDROIDNDK: /home/runner/.buildozer/android/platform/android-ndk-r25b
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
